@@ -1,17 +1,17 @@
  name: Build and Release
- ​
- on:
-  push:
+ 
+on:
+  push:
     branches:
       - master
-      - "feature/*"
+      -"feature/*"
     tags:
       - "v*.*.*"
   pull_request:
     branches:
       - master
       - "feature/*"
- ​
+ 
  jobs:
   apk:
     name: Generate APK
